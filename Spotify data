@@ -7,6 +7,12 @@ ORDER BY popularity desc
 LIMIT 10;
 
 who has the longest song?
+
+SELECT DISTINCT artist_name, duration_ms
+FROM BIT_DB.Spotifydata
+GROUP BY artist_name
+ORDER BY duration_ms desc;
+
 who is the top female artist for
 order this genre of music by danceability
 lenge of muusic correlate to popularity
