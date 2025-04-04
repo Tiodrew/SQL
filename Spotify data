@@ -6,7 +6,7 @@ GROUP BY artist_name
 ORDER BY popularity desc
 LIMIT 10;
 
-who is the top artist for this genre
+who has the longest song?
 who is the top female artist for
 order this genre of music by danceability
 lenge of muusic correlate to popularity
