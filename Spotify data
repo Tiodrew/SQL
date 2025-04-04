@@ -1,4 +1,11 @@
 who is in the top ten artists?
+
+SELECT DISTINCT artist_name, popularity
+FROM BIT_DB.Spotifydata
+GROUP BY artist_name 
+ORDER BY popularity desc
+LIMIT 10;
+
 who is the top artist for this genre
 who is the top female artist for
 order this genre of music by danceability
