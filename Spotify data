@@ -13,6 +13,23 @@ FROM BIT_DB.Spotifydata
 GROUP BY artist_name
 ORDER BY duration_ms desc;
 
-who is the top female artist for
 order this genre of music by danceability
-lenge of muusic correlate to popularity
+
+SELECT DISTINCT artist_name, danceability 
+FROM BIT_DB.Spotifydata
+ORDER BY danceability desc; 
+
+length of muusic correlate to popularity
+
+SELECT artist_name, popularity, duration_ms
+FROM BIT_DB.Spotifydata
+ORDER BY duration_ms desc
+LIMIT 10;
+
+SELECT artist_name, popularity, duration_ms
+FROM BIT_DB.Spotifydata
+ORDER BY duration_ms asc
+LIMIT 10;
+
+SELECT AVG(duration_ms), popularity
+FROM BIT_DB.Spotifydata
